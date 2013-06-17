@@ -1,6 +1,59 @@
 Change Log
 ===============================================================================
 
+Version 4.3.1 *(2013-04-28)*
+----------------------------
+
+ * Fix: Importing library into Eclipse as a Maven module now works correctly.
+ * Prevent dispatching touch events to both action bar and content view on API
+   11 and up.
+ * Add Hebrew and Brazillian translations to i18n module.
+
+
+Version 4.3.0 *(2013-04-15)*
+----------------------------
+
+ * New: FEST module for testing ActionBarSherlock classes.
+ * New: i18n module for including internationalized strings used by actionbar.
+ * Removed dialog themes.
+ * Fix: `SearchView` suggestions now work properly.
+ * Fix: Prevent rare NPE when restoring state on pre-Honeycomb devices.
+ * Fix: Correct behavior of `IcsColorDrawable`'s `setAlpha` method.
+ * Fix: Handle cases where `Locale.ROOT` is not present on pre-Honeycomb.
+ * Fix: Correct tab measurement edge-case on pre-Honeycomb.
+ * Use custom Toast layout to ensure consistent look and feel.
+ * Fix: Prevent monkey runners from uselessly crashing.
+ * Fix: Do not hold on to old menu items after a call to `invalidateOptionsMenu`.
+ * Fix: Ensure `ShareActionProvider` works when only one intent is available.
+ * Fix: Scroll list navigation to the selected item when opened.
+
+
+Version 4.2.0 *(2012-10-07)*
+----------------------------
+
+**Maven `artifactId` is now 'actionbarsherlock'.**
+
+Note: The `.Dialog` themes are now deprecated. These will be removed in a future
+version of the library.
+
+ * Add `SearchView` widget for standard search interaction (API 8+ only)
+ * Fix: `ShareActionProvider` in the split action bar no longer fills the entire
+   screen.
+ * Fix: `ShareActionProvider` now does file I/O on a background thread.
+ * Fix: Automatically correct `ColorDrawable` not respecting bounds when used as
+   a stacked background.
+ * Fix: Ensure fragments collection is present before dispatching events.
+ * Fix: XML-defined `onClick` searches the correct context for the declared
+   method.
+ * Fix: Ensure action mode start/finish callbacks are invoked on the activity
+   for the native action bar.
+ * Fix: Allow tab callbacks to have a fragment transaction instance for any
+   `FragmentActivity`.
+ * Fix: Ensure `CollapsibleActionView` callbacks are dispatched in both native
+   and compatbility action bars.
+ * Fix: Remove `.ForceOverflow` themes. These never should have been included.
+
+
 Version 4.1.0 *(2012-05-17)*
 ----------------------------
 
