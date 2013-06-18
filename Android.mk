@@ -1,8 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := $(call all-java-files-under, actionbarsherlock/src)
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/actionbarsherlock/res
+LOCAL_SRC_FILES := $(call all-java-files-under, library/src)
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/library/res
 LOCAL_MANIFEST_FILE := library/AndroidManifest.xml
 
 LOCAL_JAVA_LIBRARIES := \
